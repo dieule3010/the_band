@@ -49,6 +49,8 @@ html{
   line-height:46px;
   padding: 0 24px;
   display: block;
+  /* position: fixed;
+  z-index: 10; */
 }
 
 #nav > li:hover > a,
@@ -95,7 +97,6 @@ html{
 
 #slider {
   position: relative;
-  margin-top: 46px;
   padding-top: 50%;  
   background: url('https://www.w3schools.com/w3images/la.jpg') top center/ cover no-repeat;
 }
