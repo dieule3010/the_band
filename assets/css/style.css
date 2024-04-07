@@ -237,11 +237,11 @@ margin-left: 16px;
   FLOAT: LEFT;
   width: 33.33333%;
   padding: 0 8px;
+
 }
 
 
 .place_img{
-  width: 100%;
   display: block;
 }
 
@@ -251,6 +251,7 @@ margin-left: 16px;
 .place_body{
   padding: 16px;
   background-color: #fff;
+  width: 64%;
 
 }
 .place_heading{
@@ -281,4 +282,29 @@ margin-left: 16px;
 #footer {
 
 
+}
+.modal{
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model_container{
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+}
+.modal_header{
+  background: green;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color:#fff;
 }
