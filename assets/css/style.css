@@ -12,6 +12,12 @@ html{
 3. Màu sắc
 4. Kiểu chữ, hình tròn, hình vuông
  */
+.clear{
+  clear: both;
+}
+.text-white{
+    color: #fff !important;
+}
 #main {
 
 }
@@ -134,7 +140,7 @@ html{
 }
 #content {
   height: 1000px;
-  background: #ccc;
+  background: #fff;
 }
 
 #content .content-section{
@@ -149,10 +155,12 @@ html{
   font-style:italic;
   margin-top:25px;
   opacity: 0.6;
+  text-align: center;
 }
 #content .section-heading{
   font-size: 30px;
   font-weight: 500;
+  margin-top: 106px;
 }
 
 #content .about-text{
@@ -160,12 +168,117 @@ html{
   text-align: justify;
   line-height: 1.4;
 }
+#content .member_item{
+  float: left;
+  width: 33.3333%;
+}
+#content .member_list{
+  margin-top: 48px;
+  overflow: hidden  ;
+}
+
+#content .member_name{
+  font-size: 15px;
+  text-align: center;
+}
+#content .member_image{
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+/* tour section */
+.tour-section{
+  background-color: #000;
+}
+
+.ticket-list{
+  background-color: #fff;
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.ticket-list li{
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  list-style-type: none;
+}
+.ticket-list .sold-out{
+background-color: #f44336;
+color:#fff;
+padding: 4px;
+margin-left: 16px;
+}
+
+.ticket-list .quantity{
+  float: right;
+  height: 18px;
+  width: 20px;
+  background-color: #000;
+  color: white;
+  border-radius: 85%;
+  text-align: center;
+}
 
 #content .content-section,
 #content .section-heading{
   text-align: center;
 }
+.place_list{
+  margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+
+}
+.place_item{
+  FLOAT: LEFT;
+  width: 33.33333%;
+  padding: 0 8px;
+}
+
+
+.place_img{
+  width: 100%;
+  display: block;
+}
+
+.place_img:hover{
+  opacity: 0.6;
+}
+.place_body{
+  padding: 16px;
+  background-color: #fff;
+
+}
+.place_heading{
+
+}
+.place_time{
+  margin-top: 15px;
+  opacity: 0.6;
+
+}
+.place_discription{
+  margin-top: 15px;
+
+}
+.place_btn{
+  color: #fff;
+  background-color: #000;
+  padding: 11px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+
+}
+.place_btn:hover{
+  opacity: 0.6;
+}
 
 #footer {
+
 
 }
