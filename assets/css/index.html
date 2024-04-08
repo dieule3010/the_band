@@ -82,7 +82,7 @@
               <h3 class="place_heading">NEWYORK</h3>
               <p class="place_time">Fri 27 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="place_btn">BUY TICKETS</a>
+              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
            <!-- PLACE 2 -->
@@ -92,7 +92,7 @@
               <h3 class="place_heading">Paris</h3>
               <p class="place_time">Sat 28 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="place_btn">BUY TICKETS</a>
+              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
            <!-- PLACE 3 -->
@@ -102,7 +102,7 @@
               <h3 class="place_heading">San Francisco</h3>
               <p class="place_time">Sun 29 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <a href="#" class="place_btn">BUY TICKETS</a>
+              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
         </div>
@@ -121,33 +121,33 @@
 
     </div>
   </div>
-  <div class="modal">
+  <div class="modal js_modal">
     <div class="model_container">
-      <div  class="model_closed">
+      <div  class="model_closed js_model_close">
         <i class="fa fa-times" aria-hidden="true"></i>
       </div>
 
       <header class="modal_header">
-        <i class="fa fa-suitcase" aria-hidden="true"></i>
+        <i class="model_heading_lable fa fa-suitcase" aria-hidden="true"></i>
         Tickets
       </header>
 
       <div class="model_body">
-       <lable class="model_lable">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        Tickets, $15 per person
-       </lable>
-       <input type="text" class="lable_input" placeholder="How many?">
+        <lable class="model_lable">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Tickets, $15 per person
+        </lable>
+        <input type="text" class="lable_input" placeholder="How many?">
 
-      <lable class="model_lable">
+        <lable class="model_lable">
           <i class="fa fa-users" aria-hidden="true"></i>
           Send to
-      </lable>
-      <input type="text" class="lable_input" placeholder="Enter email">
-      <button id="buy_ticket">
-        Pay
+        </lable>
+        <input type="text" class="lable_input" placeholder="Enter email">
+        <button id="buy_ticket">
+          PAY
         <i class="fa fa-check" aria-hidden="true"></i>
-      </button>
+        </button>
       </div>
       <footer class="modal_footer">
         <p class="modal_help">Need <a href="" class="">help?</a></p>
@@ -155,7 +155,22 @@
     </div>
   </div>
   <script>
+      const buyBtns = document.querySelectorAll('js_buy_ticket')
+      const modal = document.querySelector('js_modal')
+      const model_closed = document.querySelector('js_model_close')
 
+      function show_buyticket() {
+        modal.classList.and('open')
+      }
+
+      function hide_buyticket() {
+        modal.classList.and('open')
+      }
+      for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click',show_buyticket)
+      }
+
+      model_closed.addEventListener('click', hide_buyticket)
   </script>
 </body>
 
