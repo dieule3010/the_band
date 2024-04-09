@@ -82,7 +82,7 @@
               <h3 class="place_heading">NEWYORK</h3>
               <p class="place_time">Fri 27 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
+              <button  class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
            <!-- PLACE 2 -->
@@ -92,7 +92,7 @@
               <h3 class="place_heading">Paris</h3>
               <p class="place_time">Sat 28 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
+              <button  class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
            <!-- PLACE 3 -->
@@ -102,7 +102,7 @@
               <h3 class="place_heading">San Francisco</h3>
               <p class="place_time">Sun 29 Nov 2016</p>
               <p class="place_discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button href="#" class="place_btn js_buy_ticket">BUY TICKETS</button>
+              <button  class="place_btn js_buy_ticket">BUY TICKETS</button>
             </div>
           </div>
         </div>
@@ -155,22 +155,23 @@
     </div>
   </div>
   <script>
-      const buyBtns = document.querySelectorAll('js_buy_ticket')
-      const modal = document.querySelector('js_modal')
-      const model_closed = document.querySelector('js_model_close')
+      const buyBtns = document.querySelectorAll('.js_buy_ticket');
+      const modal = document.querySelector('.js_modal');
+      const model_closed = document.querySelector('.js_model_close');
 
       function show_buyticket() {
-        modal.classList.and('open')
+      modal.classList.add('open');
       }
 
       function hide_buyticket() {
-        modal.classList.and('open')
-      }
-      for(const buyBtn of buyBtns){
-        buyBtn.addEventListener('click',show_buyticket)
+      modal.classList.remove('open');
       }
 
-      model_closed.addEventListener('click', hide_buyticket)
+      for (const buyBtn of buyBtns) {
+      buyBtn.addEventListener('click', show_buyticket);
+      }
+
+      model_closed.addEventListener('click', hide_buyticket);
   </script>
 </body>
 
