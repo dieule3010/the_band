@@ -15,6 +15,11 @@ html{
 .clear{
   clear: both;
 }
+
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
 .text-white{
     color: #fff !important;
 }
@@ -226,6 +231,10 @@ margin-left: 16px;
 #content .content-section,
 #content .section-heading{
   text-align: center;
+  
+}
+.content-section {
+    text-align: center;
 }
 .place_list {
   display: flex;
@@ -302,7 +311,7 @@ margin-left: 16px;
   min-height: 200px;
   position: relative;
   max-width: calc(100% - 16px);
-  animation: modalFadeIn ease 0.3s;
+  animation: modalFadeIn ease 0.5s;
 }
 
 .modal_header {
@@ -377,4 +386,47 @@ button#buy_ticket:hover {
   to {
     transform: translateY(0);
   }
+}
+.col{
+  float:left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-haft{
+  width: 50%;
+}
+.contact_content{
+  margin-top: 48px;
+}
+.contact_info{
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.contact_info i[class*="fa"]{
+  width: 30px;
+  display: inline-block;
+}
+
+.contact_form{
+  font_size: 15px;
+}
+.contact_form .form_control{
+  padding: 11px;
+  border: solid #ccc;
+  width: 100%;
+
+}
+input[type="submit"] {
+  padding: 10px;
+  background-color: green;
+  cursor: pointer;
+}
+.map_section{
+
+}
+#footer{
+  padding: 64px 16px ;
+  text-align: center;
+  
 }
