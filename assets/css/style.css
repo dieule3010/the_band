@@ -149,7 +149,7 @@ html{
 }
 
 #content .content-section{
-  width:800px;
+  width : 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,7 +165,7 @@ html{
 #content .section-heading{
   font-size: 30px;
   font-weight: 500;
-  margin-top: 106px;
+  margin-top: 50px;
 }
 
 #content .about-text{
@@ -231,7 +231,7 @@ margin-left: 16px;
 #content .content-section,
 #content .section-heading{
   text-align: center;
-  
+
 }
 .content-section {
     text-align: center;
@@ -241,6 +241,10 @@ margin-left: 16px;
   justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
+  margin: 337px;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-top: unset;
 }
 
 .place_item {
@@ -428,5 +432,8 @@ input[type="submit"] {
 #footer{
   padding: 64px 16px ;
   text-align: center;
-  
+
+}
+section.row.place_list {
+  width: 62%;
 }
