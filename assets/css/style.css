@@ -437,3 +437,9 @@ input[type="submit"] {
 section.row.place_list {
   width: 62%;
 }
+h2.section-heading.text-white {
+  text-align: center;
+}
+p.section-sub-heading.text-white {
+  text-align: center;
+}
